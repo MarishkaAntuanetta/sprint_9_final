@@ -24,7 +24,7 @@ func generateRandomElements(size int) []int {
 	}
 	resultRand := make([]int, size)
 	for i := 0; i < len(resultRand); i++ {
-		resultRand[i] = rand.Intn(100)
+		resultRand[i] = rand.Int()
 	}
 	return resultRand
 }

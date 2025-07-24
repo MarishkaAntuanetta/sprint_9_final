@@ -27,11 +27,6 @@ func TestGenerateRandomElements(t *testing.T) {
 		t.Errorf("Ожидалась длина %d, получена: %d", size, len(result3))
 	}
 
-	for i, value := range result3 {
-		if value < 0 || value >= 100 {
-			t.Errorf("Элемент [%d] = %d — вне диапазона [0, 99]", i, value)
-		}
-	}
 }
 
 func TestMaximum(t *testing.T) {
